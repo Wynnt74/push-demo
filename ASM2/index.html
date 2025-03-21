@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZureIT - Công nghệ cho doanh nghiệp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="ticket.js">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+        <h1 class="logo">
+            <img src="/ASM2/IMG/logoAZureIT-removebg-preview.png" alt="AZureIT">
+        </h1>
+    </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="/ASM2/index.html" class="nav-link active">Trang Chủ</a></li>
+                <li><a href="/ASM2/sanpham.html" class="nav-link">Sản Phẩm</a></li>
+                <li><a href="/ASM2/dichvufb.html" class="nav-link">Dịch Vụ FaceBook</a></li>
+                <li><a href="/ASM2/dichvuig.html" class="nav-link">Dịch Vụ Instagram</a></li>
+                <li><a href="/ASM2/dichvutiktok.html" class="nav-link">Dịch Vụ Tiktok</a></li>
+                <li><a href="/ASM2/dichvuyoutube.html" class="nav-link">Dịch Vụ Youtube</a></li>
+                <li><a href="/ASM2/lienhe.html" class="nav-link">Liên Hệ</a></li>
+                <li><a href="/ASM2/login.html" class="nav-link">Đăng Nhập / Đăng Ký</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider5.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Chào mừng đến với AZureIT</h2>
+                    <p>Chúng tôi cung cấp giải pháp công nghệ tiên tiến giúp doanh nghiệp phát triển mạnh mẽ.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider4.webp" style="width:100%">
+                <div class="text">
+                    <h2>Thiết kế website giá rẻ</h2>
+                    <p>Nâng cao hiệu suất doanh nghiệp với các giải pháp phần mềm hiện đại.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider3.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Phát triển doanh nghiệp của bạn</h2>
+                    <p>Chúng tôi giúp bạn tiếp cận công nghệ mới nhất để tăng trưởng bền vững.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+        </script>
+
+        <section class="section optimized-section">
+            <div class="section-content relative">
+                <div class="row optimized-row">
+                    <div class="col medium-6 small-12 large-6">
+                        <div class="col-inner">
+                            <div class="row optimized-subrow">
+                                <div class="col medium-6 small-12 large-6 feature-col">
+                                    <div class="icon-box featured-box">
+                                        <div class="icon-box-img">
+                                            <img src="https://azt.vn/wp-content/uploads/2020/11/tckh.png" alt="Tiếp cận khách hàng">
+                                        </div>
+                                        <div class="icon-box-text">
+                                            <h3>Tiếp cận khách hàng</h3>
+                                            <p>Tìm kiếm và tiếp cận tới nhiều khách hàng trên internet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col medium-6 small-12 large-6 feature-col">
+                                    <div class="icon-box featured-box">
+                                        <div class="icon-box-img">
+                                            <img src="https://azt.vn/wp-content/uploads/2020/11/chiphi.png" alt="Chi phí thấp">
+                                        </div>
+                                        <div class="icon-box-text">
+                                            <h3>Chi phí thấp</h3>
+                                            <p>Không tốn nhiều thời gian và chi phí, hiệu quả lợi ích cao</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col medium-6 small-12 large-6 feature-col">
+                                    <div class="icon-box featured-box">
+                                        <div class="icon-box-img">
+                                            <img src="https://azt.vn/wp-content/uploads/2020/11/tudong.png" alt="Hoàn toàn tự động">
+                                        </div>
+                                        <div class="icon-box-text">
+                                            <h3>Hoàn toàn tự động</h3>
+                                            <p>Tất cả dịch vụ đều tự động được thực hiện nhanh chóng</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col medium-6 small-12 large-6 ">
+                                    <div class="decorative-image">
+                                        <img width="128" height="106" src="https://azt.vn/wp-content/uploads/2020/11/dot-bg.png" 
+                                             alt="Họa tiết trang trí" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="full-width">
+                                    <div class="decorative-image">
+                                        <img width="600" height="156" src="/ASM2/IMG/4buoc.jpg" 
+                                             alt="Họa tiết trang trí" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col medium-6 small-12 large-6">
+                        <div class="content-wrapper">
+                            <h2>Dịch Vụ Thiết Kế Website & Marketing Online – AZureIT</h2>
+                            <p>Chuyên cung cấp dịch vụ thiết kế web, giúp các cá nhân, doanh nghiệp tiếp cận khách hàng tiềm năng, tăng doanh số bán hàng và xây dựng thương hiệu.</p>
+                            <p>Bạn muốn sở hữu một website chuyên nghiệp, thu hút khách hàng và tối ưu chuyển đổi? AZureIT chuyên thiết kế website theo yêu cầu, chuẩn SEO, tốc độ tải nhanh, giao diện hiện đại, giúp cá nhân và doanh nghiệp xây dựng thương hiệu mạnh mẽ, tiếp cận khách hàng hiệu quả.</p>
+                            <p>Không chỉ dừng lại ở thiết kế web, chúng tôi còn cung cấp dịch vụ quảng cáo và phát triển thương hiệu trên Facebook, TikTok, Instagram, YouTube.</p>
+                            <p>✅ Facebook Ads: Tạo chiến dịch quảng cáo hiệu quả, tăng tương tác, thu hút khách hàng tiềm năng.</p>
+                            <p>✅ TikTok Marketing: Xây dựng nội dung viral, tối ưu quảng cáo TikTok Ads giúp thương hiệu của bạn bùng nổ.</p>
+                            <p>✅ Instagram Growth: Phát triển tài khoản, đẩy mạnh lượt theo dõi, tăng độ phủ sóng thương hiệu.</p>
+                            <p>Với đội ngũ giàu kinh nghiệm và chiến lược tối ưu, AZureIT cam kết giúp bạn phát triển mạnh mẽ trên nền tảng số. Liên hệ ngay để bứt phá doanh thu!</p>
+                        </div>
+                        <button class="btn place-buy-btn js-buy-ticket">ĐĂNG KÝ SỬ DỤNG</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" class="content-section">
+            <div class="services">
+                <h2>Dịch Vụ Của AZureIT</h2>
+                <p>Chúng tôi cam kết chất lượng dịch vụ và tối ưu mang lại những trải nghiệm tốt nhất<br>
+                    cho các bạn về mọi lĩnh vực.
+                </p>
+                <div class="service-container">
+                    <div class="service-item">
+                        <img src="/ASM2/IMG/thietkewebsite.png" alt="Thiết Kế Website">
+                        <h3><a href="/ASM2/sanpham.html">Thiết Kế Website</a></h3>
+                        <p>Thiết kế website chuyên nghiệp, hiện đại, chuẩn SEO.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/ASM2/IMG/dich-vu-fb.png" alt="Dịch Vụ Facebook">
+                        <h3><a href="/ASM2/dichvufb.html">Dịch Vụ Facebook</a></h3>
+                        <p>Tăng tương tác, tăng like, chạy quảng cáo Facebook hiệu quả.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/ASM2/IMG/dich-vu-youtube.png" alt="Dịch Vụ Youtube">
+                        <h3><a href="/dich-vu-youtube-uy-tin/">Dịch Vụ Youtube</a></h3>
+                        <p>Quảng bá thương hiệu trên Youtube với chiến lược tối ưu.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/ASM2/IMG/dich-vu-tiktok.png" alt="Dịch vụ Tiktok">
+                        <h3><a href="/ASM2/dichvutiktok.html">Dịch vụ Tiktok</a></h3>
+                        <p>Tăng follow, lượt xem, thả tim, chia sẻ video TikTok.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/ASM2/IMG/dich-vu-instagram.png" alt="Dịch vụ Instagram">
+                        <h3><a href="/ASM2/dichvuig.html">Dịch vụ Instagram</a></h3>
+                        <p>Tăng follow, thả tim, tăng tương tác cho profile.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/ASM2/IMG/thietkewebsite.png" alt="Dịch vụ khác">
+                        <h3><a href="/ASM2/sanpham.html">Dịch vụ khác</a></h3>
+                        <p>Tăng traffic web, backlink, hỗ trợ Shopee, Sendo, Lazada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container product-duanweb">
+            <h2 class="uppercase" style="text-align: center;">Dự án website</h2>
+            <h5 style="text-align: center;">Những mẫu giao diện website nổi bật</h5>
+            
+            <div class="product-grid">
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="https://azt.vn/wp-content/uploads/2021/07/thoitrang-300x300.jpg" alt="Thời trang nữ">
+                        <p class="category">Bán hàng</p>
+                        <p>Web Thời Trang Nữ</p>
+                        <a href="/ASM2/lienhe.html"><button class="add-to-cart">Liên Hệ</button></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://azt.vn/wp-content/uploads/2021/07/bds33-300x300.jpg" alt="Bất động sản">
+                        <p class="category">Bất động sản</p>
+                        <p>Web Bất Động Sản</p>
+                        <a href="/ASM2/lienhe.html"><button class="add-to-cart">Liên Hệ</button></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://azt.vn/wp-content/uploads/2021/07/crypto-300x300.jpg" alt="Tiền ảo">
+                        <p class="category">Tiền ảo</p>
+                        <p>Mẫu Trade Tiền Ảo</p>
+                        <a href="/ASM2/lienhe.html"><button class="add-to-cart">Liên Hệ</button></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://azt.vn/wp-content/uploads/2021/07/hoatuoi-300x300.jpg" alt="Hoa tươi">
+                        <p class="category">Hoa tươi</p>
+                        <p>Web Bán Hoa</p>
+                        <a href="/ASM2/lienhe.html"><button class="add-to-cart">Liên Hệ</button></a>
+                    </div>
+                </div>
+                
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="https://azt.vn/wp-content/uploads/2021/07/tour1-300x300.jpg" alt="Du lịch">
+                        <p class="category">Du lịch</p>
+                        <p>Web Tour & Khách Sạn</p>
+                        <a href="/ASM2/lienhe.html"><button class="add-to-cart">Liên Hệ</button></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://azt.vn/wp-content/uploads/2021/07/ketoan-300x300.jpg" alt="Kế toán">
+                        <p class="category">Kế toán</p>
+                        <p>Web Cho Công Ty</p>
+                        <a href="/ASM2/lienhe.html"><button class="add-to-cart">Liên Hệ</button></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://azt.vn/wp-content/uploads/2021/07/thuoctangcan-300x300.jpg" alt="Thuốc tăng cân">
+                        <p class="category">Bán Hàng</p>
+                        <p>Web Cho Thuốc Các Loại</p>
+                        <a href="/ASM2/lienhe.html"><button class="add-to-cart">Liên Hệ</button></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://azt.vn/wp-content/uploads/2021/07/baby-300x300.jpg" alt="Baby Shop">
+                        <p class="category">Shop</p>
+                        <p>Web Cho Baby</p>
+                        <a href="/ASM2/lienhe.html"><button class="add-to-cart">Liên Hệ</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section testimonials" id="testimonials">
+            <div class="section-content">
+                <h2 class="title">CẢM NHẬN KHÁCH HÀNG</h2>
+                <h5 class="subtitle">Chia sẻ câu chuyện</h5>
+                <div class="testimonials-container">
+                    <div class="testimonial-box">
+                        <div class="testimonial-image">
+                            <img src="https://azt.vn/wp-content/uploads/2023/06/kh-luong-150x150.jpg" alt="Lương Nguyễn">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-text">Tôi rất hài lòng với dịch vụ thiết kế website của AZureIT. Họ đã lắng nghe ý kiến của tôi và đưa ra những đề xuất tối ưu nhất.</p>
+                            <div class="testimonial-meta">Lương Nguyễn / Mỹ Phẩm</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="testimonial-image">
+                            <img src="https://azt.vn/wp-content/uploads/2023/06/linhkh-150x150.jpg" alt="Tuấn Linh">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-text">Sự tận tâm của đội ngũ thiết kế đã giúp tôi cảm thấy tuyệt vời khi trang web của tôi trở nên chuyên nghiệp và ấn tượng.</p>
+                            <div class="testimonial-meta">Tuấn Linh / Nội Thất</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <ul class="giuseart-pc-contact-bar">
+        <li class="facebook">
+        <a href="https://m.me/wynnt63" target="_blank" rel="nofollow"></a>
+        </li>
+        <li class="zalo">
+        <a href="https://zalo.me/0365740754" target="_blank" rel="nofollow" title="Zalo"></a>
+        </li>
+        <li class="hotline">
+        <a href="https://m.me/wynnt63" target="_blank" rel="nofollow" title="Hotline"></a>
+        </li>
+    </ul>
+    <footer class="footer">
+        <div class="row"> 
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/departure.png" alt="Logo Công ty">
+                    <h3>Thông tin công ty</h3>
+                </div>
+                <li>Quy định công ty:</li>
+                <li>Liên hệ: PS43417_HUYNHHUUTAI</li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/contact-mail.png" alt="Logo Liên Hệ" class="icon">
+                    <h3>Liên hệ</h3>
+                </div>
+                <li>Hotline: 0365740xxx</li>
+                <li>Email: <a href="mailto:htai2712@gmail.com">htai2712@gmail.com</a></li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/support.png" alt="Logo hỗ trợ khách hàng">
+                    <h3>Hỗ trợ khách hàng</h3>
+                </div>
+                <li>
+                    <a href="/ASM2/lienhe.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CShoantien.html">Chính sách hoàn tiền</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CSbaohanh.html">Chính sách bảo hành</a>
+                </li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/copyright.png" alt="Logo bản quyền" class="icon">
+                    <h3>Bản quyền</h3>
+                </div>
+                <li>Thiết kế website.</li>
+                <li>Tất cả các quyền được bảo mật.</li>
+            </div>
+        </div>
+    </footer>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="modal-heading-icon ti-bag"></i>
+                ĐĂNG KÝ NGAY
+            </header>
+
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-lable">
+                    <i class="ti-user">Họ và tên *</i>
+                </label>
+                <input id="ticket-quantity" type="text" class="modal-input" placeholder="Nhập họ tên của bạn *" required>
+                <label for="ticket-date" class="modal-lable">
+                    <i class="ti-calendar">Ngày sinh</i>                   
+                </label>
+                <input id="ticket-date" type="date" class="modal-input" placeholder="" required>
+
+                <label for="ticket-phone" class="modal-lable">
+                    <i class="ti-mobile">Số điện thoại *</i>                   
+                </label>
+                <input id="ticket-phone" type="tel" class="modal-input" placeholder="Nhập số điện thoại của bạn *" required>
+                <label for="ticket-phone" class="modal-lable">
+                    <i class="ti-mobile">Mật Khẩu *</i>                   
+                </label>
+                <input id="ticket-phone" type="tel" class="modal-input" placeholder="" required>
+                <label for="ticket-phone" class="modal-lable">
+                    <i class="ti-mobile">Xác Nhận Mật Khẩu *</i>                   
+                </label>
+                <input id="ticket-phone" type="tel" class="modal-input" placeholder="" required>
+                
+                
+                <button id="buy-tickets">
+                    Xác Nhận Đăng Ký <i class="ti-check"></i>
+                </button>
+            </div>
+    </div>
+    <script src="/ASM2/ticket.js"></script>
+</body>
+</html>

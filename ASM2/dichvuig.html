@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .instagram-services-dichvuinstagram{
+            text-align: center;
+            align-items: center;
+            max-width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+        .pricing-table-dichvuinstagram{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        .contaierofdvig{
+            display: flex;
+        }
+        .imgofdvig{
+            width: 500px;
+            padding-left: 15px;
+            height: auto;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .textofdvig ul li::before {
+            content: "⭐";
+            margin-right: 10px;
+        }
+        .textofdvig{
+            text-align: left;
+            padding: 20px;
+            line-height:1.5;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .pricecolor{    
+            font-weight: bold;
+            color: rgb(232, 0, 0);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        thead tr {
+            background-color: #03abf3;
+            color: white;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center  ;
+            border: 1px solid #ddd;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+        <h1 class="logo">
+            <img src="/ASM2/IMG/logoAZureIT-removebg-preview.png" alt="AZureIT">
+        </h1>
+    </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="/ASM2/index.html" class="nav-link active">Trang Chủ</a></li>
+                <li><a href="/ASM2/sanpham.html" class="nav-link">Sản Phẩm</a></li>
+                <li><a href="/ASM2/dichvufb.html" class="nav-link">Dịch Vụ FaceBook</a></li>
+                <li><a href="/ASM2/dichvuig.html" class="nav-link">Dịch Vụ Instagram</a></li>
+                <li><a href="/ASM2/dichvutiktok.html" class="nav-link">Dịch Vụ Tiktok</a></li>
+                <li><a href="/ASM2/dichvuyoutube.html" class="nav-link">Dịch Vụ Youtube</a></li>
+                <li><a href="/ASM2/lienhe.html" class="nav-link">Liên Hệ</a></li>
+                <li><a href="/ASM2/login.html" class="nav-link">Đăng Nhập / Đăng Ký</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider5.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Chào mừng đến với AZureIT</h2>
+                    <p>Chúng tôi cung cấp giải pháp công nghệ tiên tiến giúp doanh nghiệp phát triển mạnh mẽ.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider4.webp" style="width:100%">
+                <div class="text">
+                    <h2>Thiết kế website giá rẻ</h2>
+                    <p>Nâng cao hiệu suất doanh nghiệp với các giải pháp phần mềm hiện đại.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider3.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Phát triển doanh nghiệp của bạn</h2>
+                    <p>Chúng tôi giúp bạn tiếp cận công nghệ mới nhất để tăng trưởng bền vững.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+        </script>
+    </main>
+    <section class="instagram-services-dichvuinstagram content-section">
+        <div class="container-dichvuinstagram">
+            <h1 class="text-center">Dịch vụ Instagram Mới Nhất</h1>
+            <div class="contaierofdvig">
+                <div class="textofdvig">
+                    <h3>Dịch vụ quản trị Instagram của chúng tôi gồm những công việc:</h2>
+                    <ul>
+                        <li>Hỗ trợ tạo lập kênh Instagram</li>
+                        <li>Cài đặt chatbot trả lời tự động</li>
+                        <li>Kiểm tra và tối ưu profile Instagram</li>
+                        <li>Lập kế hoạch phát triển nội dung</li>
+                        <li>Sáng tạo nội dung bài viết</li>
+                        <li>Đăng bài lên trang và cập nhật story</li>
+                        <li>Thiết kế hình ảnh, banner quảng cáo</li>
+                        <li>Seeding bài viết tăng tương tác</li>
+                        <li>Báo cáo hiệu quả chăm sóc Instagram</li>
+                        <li>Chạy quảng cáo Instagram</li>
+                    </ul>
+                </div>
+                <div>
+                    <img  class="imgofdvig" src="./IMG/goi-dich-vu-quan-tri-instagram-bao-gom-nhung-gi.png" alt="DVIG">
+                </div>
+            </div>
+            <div class="service-list">
+                <div class="service-item-dichvuinstagram">
+                    <h1>Dịch vụ phổ biến</h1>
+                </div>
+            </div>
+            <div class="pricing-table-dichvuinstagram">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dịch vụ</th>
+                            <th>Mô tả</th>
+                            <th>Giá</th>
+                            <th>Mua ngay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tăng Follow</td>
+                            <td>1000 follow / 5-10 ngày</td>
+                            <td class="pricecolor">100.000vnd</td>
+                            <td><img src="/ASM2/IMG/giohang.png" alt="Mua ngay" width="30px"></td>
+                        </tr>
+                        <tr>
+                            <td>Tăng View</td>
+                            <td>10.000 view / 5-20 phút</td>
+                            <td class="pricecolor">15.000vnd</td>
+                            <td><img src="/ASM2/IMG/giohang.png" alt="Mua ngay" width="30px"></td>
+                        </tr>
+                        <tr>
+                            <td>Tăng Like</td>
+                            <td>1000 like / 30-60 phút</td>
+                            <td class="pricecolor">90.000vnd</td>
+                            <td><img src="/ASM2/IMG/giohang.png" alt="Mua ngay" width="30px"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <h2>Cách sử dụng dịch vụ</h2>
+            <ol>
+                <li>Chọn gói dịch vụ phù hợp.</li>
+                <li>Liên hệ tư vấn qua Zalo, Facebook hoặc điện thoại.</li>
+                <li>Hoàn thành dịch vụ và thanh toán.</li>
+            </ol>
+    
+            <h2>Lưu ý khi sử dụng</h2>
+            <ul>
+                <li>Kiểm tra kỹ thông tin người cung cấp dịch vụ.</li>
+                <li>Liên hệ trực tiếp để nhận tư vấn chi tiết.</li>
+            </ul>
+        </div>
+    </section>
+    <ul class="giuseart-pc-contact-bar">
+        <li class="facebook">
+        <a href="https://m.me/wynnt63" target="_blank" rel="nofollow"></a>
+        </li>
+        <li class="zalo">
+        <a href="https://zalo.me/0365740754" target="_blank" rel="nofollow" title="Zalo"></a>
+        </li>
+        <li class="hotline">
+        <a href="https://m.me/wynnt63" target="_blank" rel="nofollow" title="Hotline"></a>
+        </li>
+    </ul>
+    <footer class="footer">
+        <div class="row"> 
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/departure.png" alt="Logo Công ty">
+                    <h3>Thông tin công ty</h3>
+                </div>
+                <li>Quy định công ty:</li>
+                <li>Liên hệ: PS43417_HUYNHHUUTAI</li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/contact-mail.png" alt="Logo Liên Hệ" class="icon">
+                    <h3>Liên hệ</h3>
+                </div>
+                <li>Hotline: 0365740xxx</li>
+                <li>Email: <a href="mailto:htai2712@gmail.com">htai2712@gmail.com</a></li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/support.png" alt="Logo hỗ trợ khách hàng">
+                    <h3>Hỗ trợ khách hàng</h3>
+                </div>
+                <li>
+                    <a href="#2">FAQ</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CShoantien.html">Chính sách hoàn tiền</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CSbaohanh.html">Chính sách bảo hành</a>
+                </li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/copyright.png" alt="Logo bản quyền" class="icon">
+                    <h3>Bản quyền</h3>
+                </div>
+                <li>Thiết kế website.</li>
+                <li>Tất cả các quyền được bảo mật.</li>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

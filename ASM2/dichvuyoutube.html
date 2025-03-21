@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ YouTuBe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content-dichyoutube {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: auto;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5;
+            position: relative;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        .textofdvyb ul li::before {
+            content: "⚡️";
+            margin-right: 10px;
+        }
+        .pricecolor{    
+            font-weight: bold;
+            color: rgb(232, 0, 0);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        thead tr {
+            background-color: #03abf3;
+            color: white;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center  ;
+            border: 1px solid #ddd;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+        <h1 class="logo">
+            <img src="/ASM2/IMG/logoAZureIT-removebg-preview.png" alt="AZureIT">
+        </h1>
+    </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="/ASM2/index.html" class="nav-link active">Trang Chủ</a></li>
+                <li><a href="/ASM2/sanpham.html" class="nav-link">Sản Phẩm</a></li>
+                <li><a href="/ASM2/dichvufb.html" class="nav-link">Dịch Vụ FaceBook</a></li>
+                <li><a href="/ASM2/dichvuig.html" class="nav-link">Dịch Vụ Instagram</a></li>
+                <li><a href="/ASM2/dichvutiktok.html" class="nav-link">Dịch Vụ Tiktok</a></li>
+                <li><a href="/ASM2/dichvuyoutube.html" class="nav-link">Dịch Vụ Youtube</a></li>
+                <li><a href="/ASM2/lienhe.html" class="nav-link">Liên Hệ</a></li>
+                <li><a href="/ASM2/login.html" class="nav-link">Đăng Nhập / Đăng Ký</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider5.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Chào mừng đến với AZureIT</h2>
+                    <p>Chúng tôi cung cấp giải pháp công nghệ tiên tiến giúp doanh nghiệp phát triển mạnh mẽ.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider4.webp" style="width:100%">
+                <div class="text">
+                    <h2>Thiết kế website giá rẻ</h2>
+                    <p>Nâng cao hiệu suất doanh nghiệp với các giải pháp phần mềm hiện đại.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider3.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Phát triển doanh nghiệp của bạn</h2>
+                    <p>Chúng tôi giúp bạn tiếp cận công nghệ mới nhất để tăng trưởng bền vững.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+        </script>
+        
+    </main>
+    <section class="content-dichyoutube content-section">
+        <div id="content" class="content-area page-wrapper textofdvyb role="main">
+            <h1><strong>Dịch Vụ YouTube Hiệu Quả – Tăng Tương Tác</strong></h1>
+            <p><strong>Dịch vụ YouTube</strong> là một trong những giải pháp quan trọng trong việc tối ưu hóa kết quả marketing, bán hàng trên YouTube. Hiện nay chúng tôi cung cấp các giải pháp từ tư vấn, thiết kế, thực hiện, đánh giá… giúp khách hàng gia tăng lượng khách hàng tiềm năng, tăng hiệu quả trong việc tiếp cận và thu hút khách hàng. Một số dịch vụ YouTube phổ biến hiện nay bao gồm:</p>
+            <ul>
+                <li>Quảng cáo trên YouTube</li>
+                <li>Tối ưu hóa kênh YouTube</li>
+                <li>Xây dựng nội dung YouTube chuyên nghiệp</li>
+                <li>Chạy quảng cáo YouTube</li>
+                <li>Tăng like cho video</li>
+                <li>Tăng subscribe cho kênh</li>
+                <li>Tăng view video</li>
+                <li>Tăng tương tác</li>
+            </ul>
+            <h2>Dịch vụ YouTube là gì?</h2>
+            <p>Dịch vụ YouTube bao gồm tất cả những hoạt động trên YouTube liên quan tới tăng subscribe kênh, tăng người theo dõi, tăng like video, tăng lượt xem video, tăng bình luận… Dịch vụ này giúp tối ưu hóa kênh YouTube, quảng cáo YouTube, và xây dựng nội dung marketing để tăng độ tương tác.</p>
+    
+            <h2>Bảng giá dịch vụ YouTube</h2>
+            <h3>1. Dịch vụ tăng like video trên YouTube</h3>
+            <p>Dịch vụ tăng like video giúp tăng số lượng like trên các video của bạn, giúp quảng bá thương hiệu và thu hút khách hàng tiềm năng.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gói like</th>
+                        <th>Số video</th>
+                        <th>Giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gói 50 like</td>
+                        <td>5 video / ngày</td>
+                        <td class="pricecolor">120.000vnd / tháng</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 100 like</td>
+                        <td>5 video / ngày</td>
+                        <td class="pricecolor">220.000vnd / tháng</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 200 like</td>
+                        <td>5 video / ngày</td>
+                        <td class="pricecolor">400.000vnd / tháng</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 500 like</td>
+                        <td>5 video / ngày</td>
+                        <td class="pricecolor">800.000vnd / tháng</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 1000 like</td>
+                        <td>5 video / ngày</td>
+                        <td class="pricecolor">1.500.000vnd / tháng</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h3>2. Dịch vụ tăng subscribe kênh YouTube</h3>
+            <p>Dịch vụ tăng subscribe giúp tăng lượt đăng ký kênh của bạn, tạo uy tín và thu hút khách hàng tiềm năng.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gói subscribe</th>
+                        <th>Thời gian</th>
+                        <th>Giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gói 1 – 5.000 subscribe</td>
+                        <td>1-5 ngày</td>
+                        <td class="pricecolor">120đ / sub</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 6.000 – 10.000 subscribe</td>
+                        <td>6-12 ngày</td>
+                        <td class="pricecolor">100đ / sub</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 10.000 – 30.000 subscribe</td>
+                        <td>15-20 ngày</td>
+                        <td class="pricecolor">90đ / sub</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 30.000 – 50.000 subscribe</td>
+                        <td>30 ngày</td>
+                        <td class="pricecolor">80đ / sub</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 50.000 subscribe trở lên</td>
+                        <td>50 ngày</td>
+                        <td class="pricecolor">70đ / sub</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h2>Cam kết về dịch vụ YouTube của AZureIT</h2>
+            <p>AZureIT luôn cam kết về chất lượng dịch vụ, mang tới cho khách hàng sự yên tâm và uy tín hàng đầu, giúp khách hàng đạt được kết quả cao trong công việc.</p>
+        </div>
+    </section>
+
+    
+        <ul class="giuseart-pc-contact-bar">
+            <li class="facebook">
+            <a href="https://m.me/wynnt63" target="_blank" rel="nofollow"></a>
+            </li>
+            <li class="zalo">
+            <a href="https://zalo.me/0365740754" target="_blank" rel="nofollow" title="Zalo"></a>
+            </li>
+            <li class="hotline">
+            <a href="https://m.me/wynnt63" target="_blank" rel="nofollow" title="Hotline"></a>
+            </li>
+        </ul>
+    <footer class="footer">
+        <div class="row"> 
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/departure.png" alt="Logo Công ty">
+                    <h3>Thông tin công ty</h3>
+                </div>
+                <li>Quy định công ty:</li>
+                <li>Liên hệ: PS43417_HUYNHHUUTAI</li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/contact-mail.png" alt="Logo Liên Hệ" class="icon">
+                    <h3>Liên hệ</h3>
+                </div>
+                <li>Hotline: 0365740xxx</li>
+                <li>Email: <a href="mailto:htai2712@gmail.com">htai2712@gmail.com</a></li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/support.png" alt="Logo hỗ trợ khách hàng">
+                    <h3>Hỗ trợ khách hàng</h3>
+                </div>
+                <li>
+                    <a href="#2">FAQ</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CShoantien.html">Chính sách hoàn tiền</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CSbaohanh.html">Chính sách bảo hành</a>
+                </li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/copyright.png" alt="Logo bản quyền" class="icon">
+                    <h3>Bản quyền</h3>
+                </div>
+                <li>Thiết kế website.</li>
+                <li>Tất cả các quyền được bảo mật.</li>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="ticket.js">
+    <style>
+        /* General Styles */
+.content-section {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn-login {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+}
+
+/* Register Section */
+.register-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+.btn-register {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.btn-register:hover {
+    color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+        <h1 class="logo">
+            <img src="/ASM2/IMG/logoAZureIT-removebg-preview.png" alt="AZureIT">
+        </h1>
+    </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="/ASM2/index.html" class="nav-link active">Trang Chủ</a></li>
+                <li><a href="/ASM2/sanpham.html" class="nav-link">Sản Phẩm</a></li>
+                <li><a href="/ASM2/dichvufb.html" class="nav-link">Dịch Vụ FaceBook</a></li>
+                <li><a href="/ASM2/dichvuig.html" class="nav-link">Dịch Vụ Instagram</a></li>
+                <li><a href="/ASM2/dichvutiktok.html" class="nav-link">Dịch Vụ Tiktok</a></li>
+                <li><a href="/ASM2/dichvuyoutube.html" class="nav-link">Dịch Vụ Youtube</a></li>
+                <li><a href="/ASM2/lienhe.html" class="nav-link">Liên Hệ</a></li>
+                <li><a href="/ASM2/login.html" class="nav-link">Đăng Nhập / Đăng Ký</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider5.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Chào mừng đến với AZureIT</h2>
+                    <p>Chúng tôi cung cấp giải pháp công nghệ tiên tiến giúp doanh nghiệp phát triển mạnh mẽ.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider4.webp" style="width:100%">
+                <div class="text">
+                    <h2>Thiết kế website giá rẻ</h2>
+                    <p>Nâng cao hiệu suất doanh nghiệp với các giải pháp phần mềm hiện đại.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider3.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Phát triển doanh nghiệp của bạn</h2>
+                    <p>Chúng tôi giúp bạn tiếp cận công nghệ mới nhất để tăng trưởng bền vững.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+        </script>
+    <section id="login" class="content-section">
+        <h2>Đăng Nhập / Đăng Ký</h2>
+        <form class="login-form">
+            <div class="form-group">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn-login">Đăng Nhập</button>
+        </form>
+        <p class="register-text">Chưa có tài khoản? <button class="btn-register js-buy-ticket">ĐĂNG KÝ NGAY</button></p>
+    </section>
+    <footer class="footer">
+        <div class="row"> 
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/departure.png" alt="Logo Công ty">
+                    <h3>Thông tin công ty</h3>
+                </div>
+                <li>Quy định công ty:</li>
+                <li>Liên hệ: PS43417_HUYNHHUUTAI</li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/contact-mail.png" alt="Logo Liên Hệ" class="icon">
+                    <h3>Liên hệ</h3>
+                </div>
+                <li>Hotline: 0365740xxx</li>
+                <li>Email: <a href="mailto:htai2712@gmail.com">htai2712@gmail.com</a></li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/support.png" alt="Logo hỗ trợ khách hàng">
+                    <h3>Hỗ trợ khách hàng</h3>
+                </div>
+                <li>
+                    <a href="#2">FAQ</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CShoantien.html">Chính sách hoàn tiền</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CSbaohanh.html">Chính sách bảo hành</a>
+                </li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/copyright.png" alt="Logo bản quyền" class="icon">
+                    <h3>Bản quyền</h3>
+                </div>
+                <li>Thiết kế website.</li>
+                <li>Tất cả các quyền được bảo mật.</li>
+            </div>
+        </div>
+    </footer>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="modal-heading-icon ti-bag"></i>
+                ĐĂNG KÝ NGAY
+            </header>
+
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-lable">
+                    <i class="ti-user">Họ và tên *</i>
+                </label>
+                <input id="ticket-quantity" type="text" class="modal-input" placeholder="Nhập họ tên của bạn *" required>
+                <label for="ticket-date" class="modal-lable">
+                    <i class="ti-calendar">Ngày sinh</i>                   
+                </label>
+                <input id="ticket-date" type="date" class="modal-input" placeholder="" required>
+
+                <label for="ticket-phone" class="modal-lable">
+                    <i class="ti-mobile">Số điện thoại *</i>                   
+                </label>
+                <input id="ticket-phone" type="tel" class="modal-input" placeholder="Nhập số điện thoại của bạn *" required>
+                <label for="ticket-phone" class="modal-lable">
+                    <i class="ti-mobile">Mật Khẩu *</i>                   
+                </label>
+                <input id="ticket-phone" type="tel" class="modal-input" placeholder="" required>
+                <label for="ticket-phone" class="modal-lable">
+                    <i class="ti-mobile">Xác Nhận Mật Khẩu *</i>                   
+                </label>
+                <input id="ticket-phone" type="tel" class="modal-input" placeholder="" required>
+                
+                
+                <button id="buy-tickets">
+                    Xác Nhận Đăng Ký <i class="ti-check"></i>
+                </button>
+            </div>
+    </div>
+    <script src="/ASM2/ticket.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính Sách Bảo Hành</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content-baohanh {
+            max-width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content-baohanh h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .content-baohanh h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        #content .large-12.col {
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <h1 class="logo">
+                <img src="/ASM2/IMG/logoAZureIT-removebg-preview.png" alt="AZureIT">
+            </h1>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="/ASM2/index.html" class="nav-link active">Trang Chủ</a></li>
+                <li><a href="/ASM2/sanpham.html" class="nav-link">Sản Phẩm</a></li>
+                <li><a href="/ASM2/dichvufb.html" class="nav-link">Dịch Vụ FaceBook</a></li>
+                <li><a href="/ASM2/dichvuig.html" class="nav-link">Dịch Vụ Instagram</a></li>
+                <li><a href="/ASM2/dichvutiktok.html" class="nav-link">Dịch Vụ Tiktok</a></li>
+                <li><a href="/ASM2/dichvuyoutube.html" class="nav-link">Dịch Vụ Youtube</a></li>
+                <li><a href="/ASM2/lienhe.html" class="nav-link">Liên Hệ</a></li>
+                <li><a href="/ASM2/login.html" class="nav-link">Đăng Nhập / Đăng Ký</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider5.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Chào mừng đến với AZureIT</h2>
+                    <p>Chúng tôi cung cấp giải pháp công nghệ tiên tiến giúp doanh nghiệp phát triển mạnh mẽ.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider4.webp" style="width:100%">
+                <div class="text">
+                    <h2>Thiết kế website giá rẻ</h2>
+                    <p>Nâng cao hiệu suất doanh nghiệp với các giải pháp phần mềm hiện đại.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider3.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Phát triển doanh nghiệp của bạn</h2>
+                    <p>Chúng tôi giúp bạn tiếp cận công nghệ mới nhất để tăng trưởng bền vững.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+        </script>
+    </main>
+
+    <div class="content-baohanh">
+        <div class="large-12 col">
+            <div class="col-inner">
+                <h1 style="text-align: center;">Chính sách bảo hành các dịch vụ mà bạn sử dụng tại AZureIT</h1>
+                <p style="text-align: center;">Các bạn sử dụng dịch vị thì lưu ý về chính sách bảo hành của chúng tôi để
+                    được hỗ trợ tốt nhất</p>
+                <h2>Dưới đây là chính sách bảo hành dịch vụ của chúng tôi:</h2>
+                <ol>
+                    <li>Azt cam kết sẽ cung cấp dịch vụ hoạt động ổn định và hiệu quả cho người dùng.</li>
+                    <li>Nếu có bất kỳ sự cố nào xảy ra trong quá trình sử dụng dịch vụ của chúng tôi, chúng tôi sẽ nỗ
+                        lực khắc phục sự cố đó trong thời gian ngắn nhất có thể.</li>
+                    <li>Nếu sự cố là do lỗi của Facebook, Youtube, Tiktok.. từ các platfom, chúng tôi sẽ chịu trách
+                        nhiệm sửa chữa và bảo trì dịch vụ của mình để đảm bảo rằng người dùng có thể tiếp tục sử dụng
+                        dịch vụ của chúng tôi một cách bình thường.</li>
+                    <li>Tuy nhiên, nếu sự cố là do hành động của người dùng hoặc do các yếu tố bên ngoài khác không phải
+                        do chúng tôi gây ra, chúng tôi sẽ không chịu trách nhiệm và không có chính sách bảo hành hoặc
+                        bồi thường nào áp dụng.</li>
+                    <li>Nếu bạn gặp vấn đề với dịch vụ , hãy liên hệ với chúng tôi qua trang Liên hệ và hotline của
+                        chúng tôi để được hỗ trợ kịp thời và tận tình.</li>
+                    <li>Chúng tôi cũng cung cấp các tài liệu hướng dẫn và hỗ trợ trực tuyến cho người dùng để giúp họ
+                        giải quyết các vấn đề thường gặp một cách nhanh chóng và hiệu quả.</li>
+                    <li>Chúng tôi đánh giá cao sự hài lòng của khách hàng và sẽ luôn cố gắng cải thiện dịch vụ của mình
+                        để đáp ứng được nhu cầu và mong muốn của người dùng.</li>
+                    <li>Bằng cách sử dụng dịch vụ , người dùng đồng ý tuân thủ các điều khoản và quy định của chúng tôi,
+                        bao gồm chính sách bảo mật và chính sách sử dụng.</li>
+                    <li>Nếu người dùng vi phạm các quy định và điều khoản này, chúng tôi có thể đình chỉ hoặc chấm dứt
+                        tài khoản của họ mà không cần thông báo trước.</li>
+                    <li>&nbsp;Chúng tôi luôn lắng nghe ý kiến phản hồi của khách hàng và cố gắng cải thiện dịch vụ của
+                        mình để đáp ứng được nhu cầu và mong muốn của người dùng.</li>
+                    <li>Trong trường hợp xảy ra tranh chấp liên quan đến chính sách bảo hành dịch vụ&nbsp; chúng tôi sẽ
+                        xem xét và giải quyết theo quy định của pháp luật để bảo vệ quyền lợi của người dùng.</li>
+                    <li>Chúng tôi hy vọng rằng chính sách bảo hành dịch vụ của chúng tôi sẽ giúp người dùng yên tâm sử
+                        dụng dịch vụ của chúng tôi và giải quyết được các vấn đề phát sinh một cách nhanh chóng và hiệu
+                        quả.</li>
+                </ol>
+
+
+            </div>
+        </div>
+    </div>
+
+    <ul class="giuseart-pc-contact-bar">
+        <li class="facebook">
+            <a href="https://m.me/wynnt63" target="_blank" rel="nofollow"></a>
+        </li>
+        <li class="zalo">
+            <a href="https://zalo.me/0365740754" target="_blank" rel="nofollow" title="Zalo"></a>
+        </li>
+        <li class="hotline">
+            <a href="https://m.me/wynnt63" target="_blank" rel="nofollow" title="Hotline"></a>
+        </li>
+    </ul>
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM1/IMG/departure.png" alt="Logo Công ty">
+                    <h3>Thông tin công ty</h3>
+                </div>
+                <li>Quy định công ty:</li>
+                <li>Liên hệ: PS43417_HUYNHHUUTAI</li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM1/IMG/contact-mail.png" alt="Logo Liên Hệ" class="icon">
+                    <h3>Liên hệ</h3>
+                </div>
+                <li>Hotline: 0365740xxx</li>
+                <li>Email: <a href="mailto:htai2712@gmail.com">htai2712@gmail.com</a></li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM1/IMG/support.png" alt="Logo hỗ trợ khách hàng">
+                    <h3>Hỗ trợ khách hàng</h3>
+                </div>
+                <li>
+                    <a href="#2">FAQ</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CShoantien.html">Chính sách hoàn tiền</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CSbaohanh.html">Chính sách bảo hành</a>
+                </li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM1/IMG/copyright.png" alt="Logo bản quyền" class="icon">
+                    <h3>Bản quyền</h3>
+                </div>
+                <li>Thiết kế website.</li>
+                <li>Tất cả các quyền được bảo mật.</li>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính Sách Hoàn Tiền</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .refund-policy{
+            max-width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+        ul,ol{
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <h1 class="logo">
+                <img src="/ASM2/IMG/logoAZureIT-removebg-preview.png" alt="AZureIT">
+            </h1>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="/ASM2/index.html" class="nav-link active">Trang Chủ</a></li>
+                <li><a href="/ASM2/sanpham.html" class="nav-link">Sản Phẩm</a></li>
+                <li><a href="/ASM2/dichvufb.html" class="nav-link">Dịch Vụ FaceBook</a></li>
+                <li><a href="/ASM2/dichvuig.html" class="nav-link">Dịch Vụ Instagram</a></li>
+                <li><a href="/ASM2/dichvutiktok.html" class="nav-link">Dịch Vụ Tiktok</a></li>
+                <li><a href="/ASM2/dichvuyoutube.html" class="nav-link">Dịch Vụ Youtube</a></li>
+                <li><a href="/ASM2/lienhe.html" class="nav-link">Liên Hệ</a></li>
+                <li><a href="/ASM2/login.html" class="nav-link">Đăng Nhập / Đăng Ký</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider5.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Chào mừng đến với AZureIT</h2>
+                    <p>Chúng tôi cung cấp giải pháp công nghệ tiên tiến giúp doanh nghiệp phát triển mạnh mẽ.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider4.webp" style="width:100%">
+                <div class="text">
+                    <h2>Thiết kế website giá rẻ</h2>
+                    <p>Nâng cao hiệu suất doanh nghiệp với các giải pháp phần mềm hiện đại.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider3.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Phát triển doanh nghiệp của bạn</h2>
+                    <p>Chúng tôi giúp bạn tiếp cận công nghệ mới nhất để tăng trưởng bền vững.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+        </script>
+    </main>
+
+    <section class="refund-policy">
+        <div class="container-refund">
+            <h2>Chính Sách Hoàn Tiền - AZureIT</h2>
+            <p>Chúng tôi cam kết cung cấp dịch vụ chất lượng và đảm bảo quyền lợi khách hàng. Nếu bạn không hài lòng với dịch vụ của AZureIT, vui lòng tham khảo chính sách hoàn tiền dưới đây:</p>
+            
+            <h3>1. Điều kiện hoàn tiền</h3>
+            <ul>
+                <li>Nếu dịch vụ không được thực hiện đúng cam kết.</li>
+                <li>Nếu có lỗi kỹ thuật nghiêm trọng từ phía AZureIT.</li>
+                <li>Nếu yêu cầu hoàn tiền được gửi trong vòng 7 ngày sau khi sử dụng dịch vụ.</li>
+            </ul>
+
+            <h3>2. Các dịch vụ áp dụng</h3>
+            <ul>
+                <li>Dịch vụ thiết kế website.</li>
+                <li>Dịch vụ Facebook.</li>
+                <li>Dịch vụ TikTok.</li>
+                <li>Dịch vụ Instagram.</li>
+            </ul>
+
+            <h3>3. Quy trình yêu cầu hoàn tiền</h3>
+            <ol>
+                <li>Gửi yêu cầu hoàn tiền qua email hoặc hotline của AZureIT.</li>
+                <li>Chúng tôi sẽ xác minh yêu cầu trong vòng 3-5 ngày làm việc.</li>
+                <li>Nếu đủ điều kiện, tiền sẽ được hoàn trong vòng 7 ngày qua phương thức thanh toán ban đầu.</li>
+            </ol>
+
+            <h3>Cam Kết Của AZureIT</h3>
+            <p>AZureIT cam kết cung cấp dịch vụ tốt nhất với sự minh bạch và đảm bảo chất lượng. Chúng tôi luôn sẵn sàng hỗ trợ khách hàng và giải quyết các vấn đề một cách công bằng.</p>
+        </div>
+    </section>
+
+
+    <ul class="giuseart-pc-contact-bar">
+        <li class="facebook">
+            <a href="https://m.me/wynnt63" target="_blank" rel="nofollow"></a>
+        </li>
+        <li class="zalo">
+            <a href="https://zalo.me/0365740754" target="_blank" rel="nofollow" title="Zalo"></a>
+        </li>
+        <li class="hotline">
+            <a href="https://m.me/wynnt63" target="_blank" rel="nofollow" title="Hotline"></a>
+        </li>
+    </ul>
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM1/IMG/departure.png" alt="Logo Công ty">
+                    <h3>Thông tin công ty</h3>
+                </div>
+                <li>Quy định công ty:</li>
+                <li>Liên hệ: PS43417_HUYNHHUUTAI</li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM1/IMG/contact-mail.png" alt="Logo Liên Hệ" class="icon">
+                    <h3>Liên hệ</h3>
+                </div>
+                <li>Hotline: 0365740xxx</li>
+                <li>Email: <a href="mailto:htai2712@gmail.com">htai2712@gmail.com</a></li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM1/IMG/support.png" alt="Logo hỗ trợ khách hàng">
+                    <h3>Hỗ trợ khách hàng</h3>
+                </div>
+                <li>
+                    <a href="#2">FAQ</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CShoantien.html">Chính sách hoàn tiền</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CSbaohanh.html">Chính sách bảo hành</a>
+                </li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM1/IMG/copyright.png" alt="Logo bản quyền" class="icon">
+                    <h3>Bản quyền</h3>
+                </div>
+                <li>Thiết kế website.</li>
+                <li>Tất cả các quyền được bảo mật.</li>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

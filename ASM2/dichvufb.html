@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ FaceBook</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content-dichfb {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: auto;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5;
+        }
+        .content-area {
+            max-width: 1200px;
+            height: auto;
+            margin: 0;
+        }
+        .content-dichfb > .content-area {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        ul{
+            list-style: none;
+        }
+        table{
+            text-align: center;
+        }
+        .sectionBGDV {
+    padding: 40px 20px;
+    position: relative;
+
+}
+.section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.rowBGDV {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+.coldvfb {
+    width: calc(50% - 20px);
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;        
+} 
+.coldvfb:hover {
+    transform: translateY(-5px);
+    z-index: 10; 
+    position: relative; 
+}
+.icondvfb {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.icondvfb img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+.icondvfb p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+.icondvfb a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    justify-content: space-between;
+}
+.icondvfb p:last-child {
+    color: red;
+    white-space: nowrap;
+}
+#pricing h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #222;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+        <h1 class="logo">
+            <img src="/ASM2/IMG/logoAZureIT-removebg-preview.png" alt="AZureIT">
+        </h1>
+    </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="/ASM2/index.html" class="nav-link active">Trang Chủ</a></li>
+                <li><a href="/ASM2/sanpham.html" class="nav-link">Sản Phẩm</a></li>
+                <li><a href="/ASM2/dichvufb.html" class="nav-link">Dịch Vụ FaceBook</a></li>
+                <li><a href="/ASM2/dichvuig.html" class="nav-link">Dịch Vụ Instagram</a></li>
+                <li><a href="/ASM2/dichvutiktok.html" class="nav-link">Dịch Vụ Tiktok</a></li>
+                <li><a href="/ASM2/dichvuyoutube.html" class="nav-link">Dịch Vụ Youtube</a></li>
+                <li><a href="/ASM2/lienhe.html" class="nav-link">Liên Hệ</a></li>
+                <li><a href="/ASM2/login.html" class="nav-link">Đăng Nhập / Đăng Ký</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider5.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Chào mừng đến với AZureIT</h2>
+                    <p>Chúng tôi cung cấp giải pháp công nghệ tiên tiến giúp doanh nghiệp phát triển mạnh mẽ.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider4.webp" style="width:100%">
+                <div class="text">
+                    <h2>Thiết kế website giá rẻ</h2>
+                    <p>Nâng cao hiệu suất doanh nghiệp với các giải pháp phần mềm hiện đại.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="/ASM2/IMG/slider3.jpg" style="width:100%">
+                <div class="text">
+                    <h2>Phát triển doanh nghiệp của bạn</h2>
+                    <p>Chúng tôi giúp bạn tiếp cận công nghệ mới nhất để tăng trưởng bền vững.</p>
+                    <a href="https://m.me/yourpage" class="message-button">Gửi tin nhắn</a>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+        </script>
+    </main>
+    <section class="content-dichfb content-section">
+        <div id="content" class="content-area page-wrapper" role="main">
+            <h1><strong>Dịch Vụ Facebook Hiệu Quả – Tăng tương tác</strong></h1>
+            <p><strong>Dịch vụ Facebook</strong> là một trong những giải pháp quan trọng trong việc tối ưu hoá kết quả marketing, bán hàng trên Facebook. Hiện nay chúng tôi cung cấp các giải pháp từ tư vấn, thiết kế, thực hiện, đánh giá… giúp khách hàng gia tăng lượng khách hàng tiềm năng, tăng hiệu quả trong việc tiếp cận và thu hút khách hàng. Một số dịch vụ Facebook phổ biến hiện nay bao gồm:</p>
+            <img class="imgqcfb" src="./IMG/DVFB.png" alt="DVFB" style="width: 700px;" style="height: 200px;">
+            <h2>Dịch vụ Facebook là gì?</h2>
+            <p>Dịch vụ Facebook bao gồm tất cả những hoạt động trên Facebook liên quan tới tăng like fanpage, tăng người theo dõi, tăng like bài viết, tăng lượt xem video, tăng bình luận… Dịch vụ này giúp tối ưu hóa trang fanpage, quảng cáo Facebook, và xây dựng nội dung marketing để tăng độ tương tác.</p>
+            <img src="./IMG/tangfl.png" alt="Tang follow" style="width: 700px;" style="height: 100px;">
+            <h2>Bảng giá dịch vụ Facebook</h2>
+            <p>Dịch vụ tăng like bài viết giúp tăng số lượng like trên các bài viết của bạn, giúp quảng bá thương hiệu và thu hút khách hàng tiềm năng.</p>
+            <!-- <table>
+                <thead>
+                    <tr>
+                        <th>Gói like</th>
+                        <th>Số bài</th>
+                        <th>Giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gói 50 like</td>
+                        <td>5 bài / ngày</td>
+                        <td>120k / tháng</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 100 like</td>
+                        <td>5 bài / ngày</td>
+                        <td>220k / tháng</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 200 like</td>
+                        <td>5 bài / ngày</td>
+                        <td>400k / tháng</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 500 like</td>
+                        <td>5 bài / ngày</td>
+                        <td>800k / tháng</td>
+                    </tr>
+                    <tr>
+                        <td>Gói 1000 like</td>
+                        <td>5 bài / ngày</td>
+                        <td>1500k / tháng</td>
+                    </tr>
+                </tbody>
+            </table> -->
+            
+            <section class="sectionBGDV" id="pricing">
+                <div class="section-bg">
+                    <div class="section-bg-overlay"></div>
+                </div>
+                <div class="section-content">
+                    <div class="rowBGDV">
+                        <div class="coldvfb">
+                            <div class="icondvfb">
+                                <a href="#" target="_blank">
+                                    <img src="./IMG/IconLIKE.png" alt="Like Post">
+                                    <img src="./IMG/tanglikefb.svg" style="width: 180px;">
+                                    <p>35đ / like</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="coldvfb">
+                            <div class="icondvfb">
+                                <a href="#" target="_blank">
+                                    <img src="./IMG/follow.png" alt="Follow">
+                                    <img src="IMG/tdfb.svg" style="width: 180px;">
+                                    <p>60đ / follow</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="coldvfb">
+                            <div class="icondvfb">
+                                <a href="#" target="_blank">
+                                    <img src="./IMG/like-page.png" alt="Like-page">
+                                    <img src="./IMG/tanglikefb.svg" style="width: 180px;">
+                                    <p>90đ / like</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="coldvfb">
+                            <div class="icondvfb">
+                                <a href="#" target="_blank">
+                                    <img src="./IMG/member-group.png" alt="member-group">
+                                    <img src="./IMG/tangmember.svg" style="width: 180px;">
+                                    <p>60đ / member</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="coldvfb">
+                            <div class="icondvfb">
+                                <a href="#" target="_blank">
+                                    <img src="./IMG/cmt-post.png" alt="cmt">
+                                    <img src="./IMG/tangbinhluan.svg" style="width: 180px;">
+                                    <p>600đ / Comment</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="coldvfb">
+                            <div class="icondvfb">
+                                <a href="#" target="_blank">
+                                    <img src="./IMG/share-post.png" alt="Share">
+                                    <img src="./IMG/tangluotshare.svg" style="width: 180px; height: auto; text-align: right;">
+                                    <p>500đ / Share</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="coldvfb">
+                            <div class="icondvfb">
+                                <a href="#" target="_blank">
+                                    <img src="./IMG/eyes.png" alt="Mắt">
+                                    <img src="./IMG/tangmatlive.svg" style="width: 180px;">
+                                    <p>6đ / Mắt</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="coldvfb">
+                            <div class="icondvfb">
+                                <a href="#" target="_blank">
+                                    <img src="./IMG/review.png" alt="Đánh Giá">
+                                    <img src="./IMG/tangrate.svg" style="width: 180px;">
+                                    <p>1,200đ / Đánh Giá</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn place-buy-btn js-buy-ticket">ĐĂNG KÝ SỬ DỤNG</button>
+                </div>
+            </section>
+            <h2>Cam kết về dịch vụ Facebook của AZureIT</h2>
+            <p>AZureIT luôn cam kết về chất lượng dịch vụ, mang tới cho khách hàng sự yên tâm và uy tín hàng đầu, giúp khách hàng đạt được kết quả cao trong công việc.</p>
+        </div>
+    </section>
+    <ul class="giuseart-pc-contact-bar">
+        <li class="facebook">
+            <a href="https://m.me/wynnt63" target="_blank" rel="nofollow"></a>
+        </li>
+        <li class="zalo">
+            <a href="https://zalo.me/0365740754" target="_blank" rel="nofollow" title="Zalo"></a>
+        </li>
+        <li class="hotline">
+            <a href="https://m.me/wynnt63" target="_blank" rel="nofollow" title="Hotline"></a>
+        </li>
+    </ul>
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/departure.png" alt="Logo Công ty">
+                    <h3>Thông tin công ty</h3>
+                </div>
+                <li>Quy định công ty:</li>
+                <li>Liên hệ: PS43417_HUYNHHUUTAI</li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/contact-mail.png" alt="Logo Liên Hệ" class="icon">
+                    <h3>Liên hệ</h3>
+                </div>
+                <li>Hotline: 0365740xxx</li>
+                <li>Email: <a href="mailto:htai2712@gmail.com">htai2712@gmail.com</a></li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/support.png" alt="Logo hỗ trợ khách hàng">
+                    <h3>Hỗ trợ khách hàng</h3>
+                </div>
+                <li>
+                    <a href="#2">FAQ</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CShoantien.html">Chính sách hoàn tiền</a>
+                </li>
+                <li>
+                    <a href="/ASM2/CSbaohanh.html">Chính sách bảo hành</a>
+                </li>
+            </div>
+            <div class="footer-column">
+                <div class="header-with-icon">
+                    <img src="/ASM2/IMG/copyright.png" alt="Logo bản quyền" class="icon">
+                    <h3>Bản quyền</h3>
+                </div>
+                <li>Thiết kế website.</li>
+                <li>Tất cả các quyền được bảo mật.</li>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
